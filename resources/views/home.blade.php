@@ -12,7 +12,7 @@
 
     @include('partials.header')
 
-    <h2>Ciao {{$name}} {{$lastname}}</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quia fugiat non sapiente explicabo eligendi quasi eaque. Cupiditate itaque maxime iusto vitae iure aspernatur repellat repudiandae error dolores dolor. Ipsum!</p>
 
 
 

@@ -14,15 +14,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $name = 'Mario';
-    $lastname = 'Rossi';
 
-    return view('home', compact('name', 'lastname'));
+    return view('home');
 })->name('home');
 
 Route::get('/about', function () {
 
-    return view('about');
+    $team = [
+        [
+            'name' => 'Mario',
+            'lastname' => 'Rossi',
+            'work' => 'CEO'
+        ],
+        [
+            'name' => 'Giuseppe',
+            'lastname' => 'Verdi',
+            'work' => 'Collaborator'
+        ],
+        [
+            'name' => 'Ugo',
+            'lastname' => 'De Ughi',
+            'work' => 'Social Media Manager'
+        ],
+    ];
+
+
+    return view('about', compact('team'));
 })->name('about');
 
 Route::get('/news', function () {

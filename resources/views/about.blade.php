@@ -12,5 +12,16 @@
 
     @include('partials.header')
 
+    <h2>Team</h2>
+
+    @foreach ($team as $member)
+        <li>{{$member['name']}}</li>
+        <li>{{$member['lastname']}}</li>
+        <li>{{$member['work']}}</li>
+        <hr>
+
+
+    @endforeach
+
 </body>
 </html>
