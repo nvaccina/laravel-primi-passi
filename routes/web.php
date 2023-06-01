@@ -18,4 +18,14 @@ Route::get('/', function () {
     $lastname = 'Rossi';
 
     return view('home', compact('name', 'lastname'));
-});
+})->name('home');
+
+Route::get('/about', function () {
+
+    return view('about');
+})->name('about');
+
+Route::get('/news', function () {
+
+    return view('news');
+})->name('news');
